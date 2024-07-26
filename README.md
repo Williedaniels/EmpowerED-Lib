@@ -1,6 +1,6 @@
 # EmpowerED-Lib
 
-EmpowerED-Lib is a mobile application designed to provide educational resources and tools to empower learners of all ages. This project is built with React Native, allowing it to run on both iOS and Android platforms.
+EmpowerED-Lib is a mobile application designed to provide educational resources and tools to empower learners of all ages. This project is entirely written in Swift for iOS.
 
 ## Features
 
@@ -8,7 +8,6 @@ EmpowerED-Lib is a mobile application designed to provide educational resources 
 - Interactive learning tools
 - User-friendly interface
 - Offline access to resources
-- Multi-platform support
 
 ## Getting Started
 
@@ -16,10 +15,7 @@ EmpowerED-Lib is a mobile application designed to provide educational resources 
 
 Ensure you have the following installed on your development machine:
 
-- [Node.js](https://nodejs.org/)
-- [npm](https://www.npmjs.com/)
 - [Xcode](https://developer.apple.com/xcode/) (for iOS development)
-- [Android Studio](https://developer.android.com/studio) (for Android development)
 - [CocoaPods](https://cocoapods.org/) (for iOS dependency management)
 
 ### Installation
@@ -30,16 +26,9 @@ Ensure you have the following installed on your development machine:
     cd EmpowerED-Lib
     ```
 
-2. Install the dependencies:
+2. Install the CocoaPods dependencies:
     ```sh
-    npm install
-    ```
-
-3. For iOS, install CocoaPods dependencies:
-    ```sh
-    cd ios
     pod install
-    cd ..
     ```
 
 ## Running the Application
@@ -48,29 +37,32 @@ Ensure you have the following installed on your development machine:
 
 1. Open the Xcode workspace:
     ```sh
-    open ios/EmpowerED-Lib.xcworkspace
+    open EmpowerED-Lib.xcworkspace
     ```
 
 2. Connect your iOS device or select a simulator.
 
 3. In Xcode, select your target device and click the **Run** button or use the shortcut `Cmd + R`.
 
-### Android
+## Running on Android Devices
 
-1. Start an Android emulator or connect your Android device.
+While EmpowerED-Lib is written in Swift and primarily intended for iOS, Android users can still access the app through the following methods:
 
-2. Run the following command:
-    ```sh
-    npm run android
-    ```
+### Method 1: Use an iOS Simulator on a Mac
 
-### Troubleshooting
+1. If you have access to a Mac, you can use Xcode's iOS simulator to run the app and share the screen with your Android device.
 
-If you encounter issues, try the following steps:
+2. Alternatively, use remote desktop applications to access a Mac running the app from your Android device.
 
-- Ensure your development environment is properly set up with all prerequisites installed.
-- Check for any error messages in the terminal or console and follow the suggested solutions.
-- Refer to the official [React Native documentation](https://reactnative.dev/docs/getting-started) for additional help.
+### Method 2: Web Version
+
+1. Create a web version of the app using a framework like [SwiftUI for Web](https://github.com/SwiftWebUI/SwiftWebUI) or [Vapor](https://vapor.codes/).
+
+2. Deploy the web version and access it via any browser on Android devices.
+
+### Method 3: Use a Third-Party Service
+
+1. Services like [Appetize.io](https://appetize.io/) can run iOS apps in the browser. Upload your app to Appetize.io and access it from any device, including Android.
 
 ## Contributing
 
@@ -89,5 +81,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Contact
 
 For any questions or feedback, please contact [Williedaniels](https://github.com/Williedaniels).
-
 
